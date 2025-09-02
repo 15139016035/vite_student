@@ -1,0 +1,32 @@
+import { defineConfig } from 'vite';
+
+
+
+写法一：配合 defineConfig ，这个函数是一个TS语法，有明确的返回值类型限定，就会有语法提示;
+export default defineConfig({
+
+})
+
+
+//写法二： 最基础的写法，只能说看你的写代码的工具是否强大，来决定有没有语法提示
+export default {
+
+}
+
+
+
+
+写法三：   
+//@type是JSDoc的一个标签 (tag)，用于指定一个变量或表达式的类型。它的作用是告诉编辑器：“嘿，下面这个变量是这个类型的”  ，也有类型的确定有语法提示
+//此处表示的就是 我正在写的这个对象就是UserConfig 对象；
+/**  @type import("vite").UserConfig */
+export default {
+    optimization: {
+        //语雀：02- vite初体验和依赖预构建 ，exclude: ["lodash"],
+        //当遇到lodash依赖的时候，不进行依赖预构建, 就会导致引入lodash后，又请求一大堆js资源都是lodash引用的依赖；
+        exclude: ["lodash"],
+    }
+}
+
+
+
