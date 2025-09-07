@@ -1,0 +1,12 @@
+{
+  "name": "vite_css_modules",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev" : "vite"
+  },
+  "dependencies": {
+    "vite": "^7.1.4"
+  }
+}
