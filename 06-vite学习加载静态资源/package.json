@@ -1,0 +1,12 @@
+{
+  "name": "vite_student",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "vite": "^7.1.4"
+  }
+}
