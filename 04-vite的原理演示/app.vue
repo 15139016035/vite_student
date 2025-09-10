@@ -1,0 +1,1 @@
+console.log("vue文件整个被转为js代码给浏览器")
